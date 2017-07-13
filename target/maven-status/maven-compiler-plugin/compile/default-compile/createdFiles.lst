@@ -1,0 +1,7 @@
+in/benchresources/cdm/user/UserList.class
+com/cxfRestApi/example/bean/UserBean.class
+in/benchresources/cdm/user/ObjectFactory.class
+com/cxfRestApi/example/resource/IUserResourceImpl.class
+com/cxfRestApi/example/resource/IUserResource.class
+in/benchresources/cdm/user/User.class
+in/benchresources/cdm/user/package-info.class

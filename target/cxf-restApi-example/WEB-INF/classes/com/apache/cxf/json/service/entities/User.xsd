@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://benchresources.in/cdm/user" xmlns:tns="http://benchresources.in/cdm/user"
+	elementFormDefault="qualified">
+
+	<!-- user object with four attributes -->
+	<xsd:element name="User">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="userId" type="xsd:int" />
+				<xsd:element name="firstName" type="xsd:string" />
+				<xsd:element name="lastName" type="xsd:string" />
+				<xsd:element name="dob" type="xsd:date" />
+				<xsd:element name="age" type="xsd:int" />
+				<xsd:element name="matches" type="xsd:int" />
+				<xsd:element name="salary" type="xsd:double" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!-- an object to contain lists of users referencing above player object -->
+	<xsd:element name="UserList">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="tns:User" minOccurs="0"
+					maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+</xsd:schema>
