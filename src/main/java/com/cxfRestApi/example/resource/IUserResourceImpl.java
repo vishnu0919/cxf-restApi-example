@@ -19,7 +19,7 @@ public class IUserResourceImpl implements IUserResource {
 
 	@Override
 	public User getUserInfo(int userId) {
-		System.out.println("In IUserResourceImpl class and getUserInfo() method *************");
+		System.out.println("In IUserResourceImpl class and getUserInfo() method *************&&&");
 		String username = "Siddharth";
 		
 		GregorianCalendar gcal = new GregorianCalendar();
